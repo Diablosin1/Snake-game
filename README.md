@@ -82,5 +82,5 @@
     # Set the frame rate
     clock.tick(10)
 
-# Quit Pygame
-pygame.quit()
+    # Quit Pygame
+    pygame.quit()
