@@ -1,8 +1,8 @@
 # Snake-game
 # Here's an example of a simple Snake game implemented in Python using the Pygame library.
 
-import pygame
-import random
+    import pygame
+    import random
 
     # Initialize Pygame
     pygame.init()
