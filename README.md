@@ -1,11 +1,11 @@
 # Snake-game
 # Here's an example of a simple Snake game implemented in Python using the Pygame library.
 
-  import pygame
+import pygame
 import random
 
-# Initialize Pygame
-pygame.init()
+    # Initialize Pygame
+    pygame.init()
 
 # Set up the display
 width, height = 640, 480
@@ -33,7 +33,7 @@ food_y = round(random.randrange(0, height - snake_size) / 20.0) * 20
 # Clock to control the game's frame rate
 clock = pygame.time.Clock()
 
-    # Game loop
+# Game loop
 game_over = False
 while not game_over:
     # Handle events
