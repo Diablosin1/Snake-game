@@ -33,26 +33,26 @@
     # Clock to control the game's frame rate
     clock = pygame.time.Clock()
 
-# Game loop
-game_over = False
-while not game_over:
-    # Handle events
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            game_over = True
-        elif event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_UP:
-                snake_dy = -snake_size
-                snake_dx = 0
-            elif event.key == pygame.K_DOWN:
-                snake_dy = snake_size
-                snake_dx = 0
-            elif event.key == pygame.K_LEFT:
-                snake_dx = -snake_size
-                snake_dy = 0
-            elif event.key == pygame.K_RIGHT:
-                snake_dx = snake_size
-                snake_dy = 0
+    # Game loop
+    game_over = False
+    while not game_over:
+        # Handle events
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                game_over = True
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_UP:
+                    snake_dy = -snake_size
+                    snake_dx = 0
+                elif event.key == pygame.K_DOWN:
+                    snake_dy = snake_size
+                    snake_dx = 0
+                elif event.key == pygame.K_LEFT:
+                    snake_dx = -snake_size
+                    snake_dy = 0
+                elif event.key == pygame.K_RIGHT:
+                    snake_dx = snake_size
+                    snake_dy = 0
 
     # Update snake's position
     snake_x += snake_dx
