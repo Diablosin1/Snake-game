@@ -7,31 +7,31 @@
     # Initialize Pygame
     pygame.init()
 
-# Set up the display
-width, height = 640, 480
-window = pygame.display.set_mode((width, height))
-pygame.display.set_caption("Snake Game")
+    # Set up the display
+    width, height = 640, 480
+    window = pygame.display.set_mode((width, height))
+    pygame.display.set_caption("Snake Game")
 
-# Define colors
-BLACK = (0, 0, 0)
-GREEN = (0, 255, 0)
-RED = (255, 0, 0)
+    # Define colors
+    BLACK = (0, 0, 0)
+    GREEN = (0, 255, 0)
+    RED = (255, 0, 0)
 
-# Snake initial position and size
-snake_size = 20
-snake_x = width // 2
-snake_y = height // 2
+    # Snake initial position and size
+    snake_size = 20
+    snake_x = width // 2
+    snake_y = height // 2
 
-# Snake movement variables
-snake_dx = 0
-snake_dy = 0
+    # Snake movement variables
+    snake_dx = 0
+    snake_dy = 0
 
-# Initial food position
-food_x = round(random.randrange(0, width - snake_size) / 20.0) * 20
-food_y = round(random.randrange(0, height - snake_size) / 20.0) * 20
+    # Initial food position
+    food_x = round(random.randrange(0, width - snake_size) / 20.0) * 20
+    food_y = round(random.randrange(0, height - snake_size) / 20.0) * 20
 
-# Clock to control the game's frame rate
-clock = pygame.time.Clock()
+    # Clock to control the game's frame rate
+    clock = pygame.time.Clock()
 
 # Game loop
 game_over = False
